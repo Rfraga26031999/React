@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import BurgerButton from './BurgerButton';
+import CartWidget from './CartWidget';
+import ItemListContainer from './ItemListContainer';
+
 
 function NavBar() {
 
@@ -17,13 +20,14 @@ function NavBar() {
           <a href="#h">Shop</a>
           <a href="#h">About</a>
           <a href="#h">Contact</a>
-          <a href="#h">Blog</a>
+          <a href='#h'><CartWidget /></a>
         </div>
         <div className='burger'>
           <BurgerButton clicked={clicked} handleClick={handleClick} />
         </div>
         <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
       </NavContainer>
+      <ItemListContainer />
     </>
   )
 }
