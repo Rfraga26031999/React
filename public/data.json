@@ -1,0 +1,44 @@
+[
+  {
+    "nombre": "Pastafrola",
+    "stock": 10,
+    "precio": 1000,
+    "id": 1,
+    "img": ""
+  },
+  {
+    "nombre": "Bizcochito 1/4",
+    "stock": 12,
+    "precio": 330,
+    "id": 2,
+    "img": ""
+  },
+  {
+    "nombre": "Palmeritas 1/4",
+    "stock": 14,
+    "precio": 310,
+    "id": 3,
+    "img": ""
+  },
+  {
+    "nombre": "Facturas (docena)",
+    "stock": 25,
+    "precio": 750,
+    "id": 4,
+    "img": ""
+  },
+  {
+    "nombre": "Pepas 1/4",
+    "stock": 11,
+    "precio": 400,
+    "id": 5,
+    "img": ""
+  },
+  {
+    "nombre": "Pan 1kg",
+    "stock": 27,
+    "precio": 240,
+    "id": 6,
+    "img": ""
+  }
+]

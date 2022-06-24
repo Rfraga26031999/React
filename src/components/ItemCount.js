@@ -1,8 +1,9 @@
 import { useState } from "react";
 import styled from "styled-components";
+import Item from "./Item";
 
-function ItemCount({ stock, initial }) {
-  const [num, setNum] = useState(initial);
+function ItemCount({ stock }) {
+  const [num, setNum] = useState(0);
 
   const suma = () => {
     if(stock > 0) {
@@ -23,6 +24,7 @@ function ItemCount({ stock, initial }) {
   return (
     <>
       <Contenedor>{num}</Contenedor>
+      <Item />
       <Boton onClick={suma} disabled={num >= stock}>+</Boton>
       <Boton onClick={resta} disabled={num === 0}>-</Boton>
       <Agregar onClick={reinicia} disabled={num === 0}>Agregar al carrito</Agregar>
