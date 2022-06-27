@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
 import ItemCount from './ItemCount';
+import Item from './Item';
 
 function ItemList() {
 
@@ -18,9 +19,10 @@ function ItemList() {
       {
         info.map(i => 
           <Producto>
-            <a href='#h'>{i.nombre} </a>
+            <span>{i.nombre} </span>
             <span> ${i.precio}</span>
             <ItemCount stock={i.stock}/>
+            <Item />
           </Producto>)
         };
     </Lista>
@@ -45,7 +47,7 @@ const Producto = styled.li`
   border-radius: 20px;
 
   a{
-    color: white;
+    color: black;
     text-decoration: none;
     margin; 1rem;
     text-align: center;

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import BurgerButton from './BurgerButton';
 import CartWidget from './CartWidget';
-import ItemListContainer from './ItemListContainer';
 
 
 function NavBar() {
@@ -27,7 +26,6 @@ function NavBar() {
         </div>
         <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
       </NavContainer>
-      <ItemListContainer />
     </>
   )
 }

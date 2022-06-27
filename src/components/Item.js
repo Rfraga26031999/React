@@ -12,7 +12,7 @@ function Item() {
 export default Item;
 
 const VerDetalle = styled.button`
-  margin-bottom: 8px;
+  margin-top: 15px;
   a {
     color: black;
   }

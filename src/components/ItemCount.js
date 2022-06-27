@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styled from "styled-components";
-import Item from "./Item";
 
 function ItemCount({ stock }) {
   const [num, setNum] = useState(0);
@@ -24,7 +23,6 @@ function ItemCount({ stock }) {
   return (
     <>
       <Contenedor>{num}</Contenedor>
-      <Item />
       <Boton onClick={suma} disabled={num >= stock}>+</Boton>
       <Boton onClick={resta} disabled={num === 0}>-</Boton>
       <Agregar onClick={reinicia} disabled={num === 0}>Agregar al carrito</Agregar>
@@ -48,5 +46,5 @@ const Contenedor = styled.p`
 const Agregar = styled.button`
   width: 80%;
   height: 30px;
-  margin-top: 5px;
+  margin-top: 15px;
 `
